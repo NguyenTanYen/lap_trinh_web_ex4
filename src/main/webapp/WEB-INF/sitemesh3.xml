@@ -1,0 +1,10 @@
+<sitemesh>
+    <!-- Áp dụng layout web.jsp cho tất cả request -->
+    <mapping path="/*" decorator="/decorators/web.jsp"/>
+
+    <!-- Nếu có trang admin thì xài layout khác -->
+    <!-- <mapping path="/admin/*" decorator="/decorators/admin.jsp"/> -->
+
+    <!-- Không áp dụng layout cho API -->
+    <mapping path="/api/*" exclude="true"/>
+</sitemesh>
