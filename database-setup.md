@@ -19,9 +19,9 @@ USE aisolution_db;
 ```
 
 ### 3. Run the Schema Script
-Execute the `createdbo.sql` file in MySQL:
+Execute the `DB.sql` file in MySQL:
 ```bash
-mysql -u root -p < createdbo.sql
+mysql -u root -p < DB.sql
 ```
 
 ### 4. Verify Database Creation
@@ -33,7 +33,7 @@ SELECT * FROM users LIMIT 5;
 ## Alternative: Use MySQL Workbench
 1. Open MySQL Workbench
 2. Connect to your MySQL server
-3. Open and execute the `createdbo.sql` file
+3. Open and execute the `DB.sql` file
 4. Verify the database and tables are created
 
 ## Troubleshooting
@@ -48,7 +48,7 @@ SELECT * FROM users LIMIT 5;
 - Check the database name in `application.properties`
 
 ### If you get "Table doesn't exist" error:
-- Make sure you've run the `createdbo.sql` script
+- Make sure you've run the `DB.sql` script
 - Verify all tables are created properly
 
 ## Database Configuration
